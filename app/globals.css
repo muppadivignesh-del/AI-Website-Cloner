@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0f;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth animations */
+* {
+  transition-property: color, background-color, border-color, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Line clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Comprehensive Dark Mode Styles for Cloned Pages
+   Ensures clicking Dark Mode button immediately transforms
+   all child sections, navbars, cards, and typography.
+   ───────────────────────────────────────────────────────────── */
+.dark {
+  color-scheme: dark;
+  background-color: #030712 !important;
+  color: #f9fafb !important;
+}
+
+.dark nav {
+  background-color: rgba(3, 7, 18, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f9fafb !important;
+}
+
+.dark nav a {
+  color: #9ca3af !important;
+}
+
+.dark nav a:hover {
+  color: #ffffff !important;
+}
+
+.dark section {
+  background-color: #030712 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark section.bg-gray-50,
+.dark .bg-gray-50 {
+  background-color: #0b0f19 !important;
+}
+
+.dark section.bg-white,
+.dark .bg-white {
+  background-color: #111827 !important;
+  color: #f9fafb !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark .text-gray-900 {
+  color: #ffffff !important;
+}
+
+.dark p,
+.dark .text-gray-500,
+.dark .text-gray-600,
+.dark .text-gray-700 {
+  color: #9ca3af !important;
+}
+
+.dark .border-gray-100,
+.dark .border-gray-200 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark .shadow-sm,
+.dark .shadow-md,
+.dark .shadow-xl,
+.dark .shadow-2xl {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8) !important;
+}
